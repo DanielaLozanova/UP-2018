@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int a,b,k, sum=0;
+	for (int i = 100; i < 1000; ++i)
+	{
+		a = i;
+		while (a != 0)
+		{
+			b = a % 10;
+			sum = sum + b;
+			a = a / 10;
+		}
+		if (sum >= 10 && sum <= 99)
+		{
+			cout << " " << i << " ";
+		}
+		sum = 0;
+	}
+	cin >> k;
+    return 0;
+}
