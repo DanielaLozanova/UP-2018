@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int n,k,a,b=0;
+	cin >> n;
+	for (int i = 0; i < n; ++i)
+	{
+		cin >> a;
+		b = b * 10 + a;
+	}
+	cout << b;
+	cin >> k;
+    return 0;
+}
