@@ -1,0 +1,34 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int n,k,x,idx;
+	bool flag = 0;
+	int arr[100];
+	cin >> n;
+	for (int i = 0; i < n; ++i)
+	{
+		cin >> arr[i];
+	}
+	cin >> x;
+	for (int j = 0; j < n; ++j)
+	{
+		if (x == arr[j])
+		{
+			flag = 1;
+			idx = j;
+		}
+	}
+	if (flag)
+	{
+		cout <<"Exit "<< idx;
+	}
+	else
+	{
+		cout << "-1";
+	}
+	cin >> k;
+    return 0;
+}
